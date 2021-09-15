@@ -1,0 +1,259 @@
+* {
+    font-family: '.PingFang SC', 'Microsoft YaHei UI', sans-serif;
+}
+@font-face {
+    font-family: 'theDataFont';
+    src: url('./bootstrap/fonts/AlfaSlabOne-Regular-2.ttf');
+}
+html {
+    font-size: 1vw;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    height: 280rem;
+    background-image: linear-gradient(#83C2FC, #9EACFE, #B995FE);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem #8495d8,
+                -0.5rem -0.5rem 1rem #b2c9ff;
+}
+#title {
+    width: 100%;
+    height: 10rem;
+    color: #A23B72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    font-size: 4rem;
+    /* font-weight: 300; */
+}
+#title img {
+    width: 4rem;
+    height: 4rem;
+    /* margin: 1rem; */
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+#environment img,
+#soilMoisture img {
+    width: 3rem;
+    height: 3rem;
+}
+#soilTemperature img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+#dataIcon img {
+    width: 10rem;
+    height: 10rem;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blocks2 #main {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #000; */
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 0.3rem;
+    overflow: scroll;
+}
+#blocks2 #cardDetails {
+    height: 90%;
+    /* border: 1px solid #000; */
+}
+#dataImg img {
+    padding: 0;
+    width: 30rem;
+    height: 30rem;
+}
+#data {
+    font-size: 5.5rem;
+    font-weight: 900;
+    font-family: 'theDataFont';
+    color: #3286FF;
+}
+#sign {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 1rem 0 1rem;
+    color: #F9C626
+}
+#footer {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.4);
+}
+#cardDetails {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+#cctv #cardDetails {
+    height: 90%;
+}
+#dataImgBox img {
+    width: 96rem;
+    height: 60rem;
+}
+#weather {
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid #000; */
+    overflow: scroll;
+}
+
+#topLine {
+    width: 100%;
+    height: 5%;
+    /* border: 5px solid #000; */
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+#details {
+    /* border: 2px solid #000; */
+    width: 100%;
+    height: 95%;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#hours{
+    width: 98rem;
+    height: 18%;
+    /* border: 2px solid #000; */
+    margin: 0 1rem 0 1rem;
+    order: 2;
+    margin-top: 1rem;
+}
+#hours .card {
+    padding: 0;
+}
+#blocks6 {
+    width: 98rem;
+    height: 24%;
+    /* border: 2px solid #000; */
+    margin-top: 1rem;
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+}
+#blocks2 {
+    width: 98rem;
+    height: 28%;
+    /* border: 2px solid #000; */
+    /* padding: 0 1rem 0 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0; */
+    margin-top: 1rem;
+    order: 3;
+}
+#cctv {
+    width: 98rem;
+    height: 30%;
+    /* border: 2px solid #000; */
+    margin: 1rem 1rem 0 1rem;
+    order: 4;
+}
+
+#firstLine, #secondLine {
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid #000; */
+    margin: 0;
+}
+
+#firstLine {
+    height: 55%;
+    padding-bottom:0.5rem;
+}
+#firstLine #data {
+    font-size: 7rem;
+}
+#secondLine {
+    height: 45%;
+    padding-top: 0.5rem;
+}
+
+.smallCard {
+    height: 100%;
+    width: 32rem;
+}
+.smallerCard {
+    height: 100%;
+    width: 16rem;
+}
+.smallerCard #title {
+    height: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.midCard {
+    height: 100%;
+    width: 40rem;
+}
+.bigCard {
+    height: 100%;
+    width: 48.5rem;
+}
+#compose {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+#Details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
