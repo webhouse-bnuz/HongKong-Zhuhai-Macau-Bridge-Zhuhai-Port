@@ -16,6 +16,7 @@ html {
     background-image: linear-gradient(#83C2FC, #9EACFE, #B995FE);
 }
 
+/* 卡片總體控制 */
 .card {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
@@ -27,6 +28,8 @@ html {
     box-shadow: 0.5rem 0.5rem 1rem #8495d8,
                 -0.5rem -0.5rem 1rem #b2c9ff;
 }
+
+/* 標題總體控制 */
 #title {
     width: 100%;
     height: 10rem;
@@ -34,31 +37,34 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     align-content: center;
     font-size: 4rem;
-    /* font-weight: 300; */
 }
+/* 標題小圖標總體控制 */
 #title img {
     width: 4rem;
     height: 4rem;
-    /* margin: 1rem; */
     margin-left: 1rem;
     margin-right: -1rem;
 }
+/* 環境 & 濕度 標題圖標的改動 */
 #environment img,
 #soilMoisture img {
     width: 3rem;
     height: 3rem;
 }
+/* 溫度 標題圖標的改動 */
 #soilTemperature img {
     width: 3.5rem;
     height: 3.5rem;
 }
+/* 開關 紅色圖標控制 */
 #dataIcon img {
     width: 10rem;
     height: 10rem;
 }
+
+/* 對 main 的總體控制 */
 #main {
     width: 100%;
     height: 100%;
@@ -67,47 +73,53 @@ html {
     justify-content: center;
     align-items: center;
 }
+/* 對 blocks2：天氣 & 土壤養分 的 main 的改動 */
 #blocks2 #main {
     height: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid #000; */
     font-size: 3rem;
     font-weight: 400;
     text-align: center;
     padding: 0 0.3rem;
     overflow: scroll;
 }
+/* 對 blocks2：天氣 & 土壤養分 的 cardDetails 的改動 */
 #blocks2 #cardDetails {
     height: 90%;
-    /* border: 1px solid #000; */
 }
 #dataImg img {
     padding: 0;
     width: 30rem;
     height: 30rem;
 }
-#data {
+
+/* 對 data 的總體控制 */
+.data {
     font-size: 5.5rem;
     font-family: 'theDataFont';
     color: #3286FF;
 }
+/* 對 data 單位的總體控制 */
 #sign {
     font-size: 2rem;
     font-weight: 600;
     margin: 0 1rem 0 1rem;
     color: #ff541c
 }
+
+/* 對更新時間的樣式的總體控制 */
 #footer {
     display: flex;
     align-items: center;
-    /* border: 1px solid #000; */
     height: 5rem;
     font-size: 1.5rem;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.4);
 }
+
+/* 對 cardDetails 的總體控制 */
 #cardDetails {
     width: 100%;
     height: 80%;
@@ -115,7 +127,6 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #000; */
 }
 #cctv #cardDetails {
     height: 90%;
@@ -127,14 +138,12 @@ html {
 #weather {
     width: 100%;
     height: 60%;
-    /* border: 1px solid #000; */
     overflow: scroll;
 }
 
 #topLine {
     width: 100%;
     height: 5%;
-    /* border: 5px solid #000; */
     color: #ffffff;
     font-size: 4rem;
     font-weight: 300;
@@ -145,7 +154,6 @@ html {
 }
 
 #details {
-    /* border: 2px solid #000; */
     width: 100%;
     height: 95%;
     padding-bottom: 1rem;
@@ -157,7 +165,6 @@ html {
 #hours{
     width: 98rem;
     height: 60%;
-    /* border: 2px solid #000; */
     margin: 0 1rem 0 1rem;
     margin-top: 1rem;
 }
@@ -167,9 +174,7 @@ html {
 #blocks6 {
     width: 98rem;
     height: 27%;
-    /* border: 2px solid #000; */
     margin-top: 1rem;
-    /* padding: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -179,19 +184,15 @@ html {
 #blocks2 {
     width: 98rem;
     height: 29%;
-    /* border: 2px solid #000; */
-    /* padding: 0 1rem 0 1rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0; */
     margin-top: 1rem;
     order: 3;
 }
 #cctv {
     width: 98rem;
     height: 31%;
-    /* border: 2px solid #000; */
     margin: 1rem 1rem 0 1rem;
     order: 4;
 }
@@ -202,7 +203,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid #000; */
     margin: 0;
 }
 
@@ -256,5 +256,4 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #000; */
 }
